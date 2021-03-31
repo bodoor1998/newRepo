@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif
+}
+
+body {
+    background:  #f2f2f2;
+}
+
+.wrapper {
+    max-width: 600px;
+    margin: 80px auto 50px;
+    padding: 30px;
+    border-radius: 20px;
+    background: #c4e5ff;
+    position: relative;
+    min-height: 350px;
+    overflow: hidden
+}
+
+
+
+.h4 {
+    margin: 0;
+    
+}
+.h5 .h3{
+    margin: 0;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #35a1f4;
+}
+
+label {
+    display: block;
+    margin-bottom: 15px;
+    font-size: 1.2rem;
+    cursor: pointer
+}
+
+.options {
+    position: relative;
+    padding-left: 30px
+}
+
+.options input {
+    opacity: 0
+}
+
+.checkmark {
+    position: absolute;
+    top: 4px;
+    left: 3px;
+    height: 20px;
+    width: 20px;
+    background-color: #cbe1f1;;
+    border: 2px solid #00205e;
+    border-radius: 50%
+}
+
+.options input:checked~.checkmark:after {
+    display: block
+}
+
+.options .checkmark:after {
+    content: "";
+    width: 9px;
+    height: 9px;
+    display: block;
+    background: white;
+    position: absolute;
+    top: 51%;
+    left: 51%;
+    border-radius: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    transition: 300ms ease-in-out 0s
+}
+
+.options input[type="radio"]:checked~.checkmark {
+    background: #35a1f4;
+    border: 2px solid #35a1f4;
+    transition: 300ms ease-in-out 0s
+}
+
+.options input[type="radio"]:checked~.checkmark:after {
+    transform: translate(-50%, -50%) scale(1)
+}
+
+
+.btn {
+    background-color: #35a1f4;
+    border: 8px solid #35a1f4 ;
+    border-radius: 30px;
+    color: #fff;
+}
+ .su{
+    margin-top: 70px;
+    display: flex;
+    justify-content: space-between;
+}
+.su .but{
+    background-color: #35a1f4;
+    border: 10px solid #35a1f4 ;
+    border-radius: 0;
+    border-radius: 20px;
+    color: #fff;
+}
+.su .but:hover{
+    font-weight:bold;
+}
+.btn.finish:hover{
+    font-weight:bold;
+    background-color: red;
+    border: 8px solid red ;
+}
+.btn:focus {
+    box-shadow: none
+}
+
+.btn:hover {
+    font-weight:bold;
+    
+}
+
+.pointbox{
+    max-width: 600px;
+    margin: 80px auto 50px;
+    padding: 30px;
+    border-radius: 20px;
+    background: #ffffff;
+    position: relative;
+    min-height: 350px;
+    overflow: hidden  
+}
+.pointbox .note{
+    display: flex;
+  /*font-size: 26px;*/
+  text-align: left;
+  border-left: 8px solid #35a1f4;
+  padding: 10px;
+
+}
+.pointbox .point{
+    margin-top: 50px;
+  text-align: center;
+  
+}
+.alret{
+    
+    text-align: center;
+}
